@@ -13,9 +13,13 @@ const State = () => {
         setCount(prev => prev - 1)
     }
 
+    const isGoingOut = true
+    let answer = isGoingOut ? "Yes" : "No"
+
     return (
         <main className="container">
             <div className="counter">
+                <h1>{answer}</h1>
                 <button className="minus" onClick={subtract} aria-label="Decrease count">–</button>
                 <h2 className="count">{count}</h2>
                 <button className="plus" onClick={add} aria-label="Increase count">+</button>
