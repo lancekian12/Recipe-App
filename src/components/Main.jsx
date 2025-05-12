@@ -15,7 +15,7 @@ const Main = () => {
         console.log(ingredients)
     }
 
-    const result = React.useState("Yes")
+    const [result] = React.useState("Yes")
 
     return (
         <main>
