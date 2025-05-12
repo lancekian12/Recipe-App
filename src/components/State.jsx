@@ -4,11 +4,13 @@ const State = () => {
     const [count, setCount] = React.useState(0)
 
     function add() {
-        setCount(count + 1)
+        setCount(function (prevCount) {
+            return prevCount + 1
+        })
     }
 
     function subtract() {
-        setCount(count - 1)
+        setCount(prev => prev - 1)
     }
 
     return (
