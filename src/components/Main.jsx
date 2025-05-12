@@ -15,7 +15,6 @@ const Main = () => {
         console.log(ingredients)
     }
 
-    const [result] = React.useState("Yes")
 
     return (
         <main>
@@ -33,10 +32,7 @@ const Main = () => {
 
 
 
-            <main>
-                <h1 className="title">Is state important to know?</h1>
-                <button className="value">{result}</button>
-            </main>
+
 
         </main>
     )
