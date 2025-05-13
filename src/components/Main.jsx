@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Main = () => {
-    const ingredients = ["Chicken", "Oregano", "Tomatoes"]
+    const [ingredients, setIngredients] = React.useState([])
 
     const ingredientsListItems = ingredients.map(ingredient => (
         <li key={ingredient}>{ingredient}</li>
@@ -11,29 +11,23 @@ const Main = () => {
         event.preventDefault()
         const formData = new FormData(event.currentTarget)
         const newIngredient = formData.get("ingredient")
-        ingredients.push(newIngredient)
-        console.log(ingredients)
+        setIngredients(prevIngredients => [...prevIngredients, newIngredient])
     }
-
 
     return (
         <main>
-            <form className="add-ingredient-form" onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="add-ingredient-form">
                 <input
                     type="text"
                     placeholder="e.g. oregano"
                     aria-label="Add ingredient"
+                    name="ingredient"
                 />
                 <button>Add ingredient</button>
-                <ul>
-                    {ingredientsListItems}
-                </ul>
             </form>
-
-
-
-
-
+            <ul>
+                {ingredientsListItems}
+            </ul>
         </main>
     )
 }

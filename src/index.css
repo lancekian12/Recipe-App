@@ -63,7 +63,7 @@ main {
   content: "+";
   margin-right: 5px;
 }
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
 }
@@ -116,4 +116,4 @@ main {
 .minus {
   margin-right: -20px;
   z-index: 1;
-}
+} */
