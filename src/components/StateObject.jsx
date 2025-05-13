@@ -3,7 +3,7 @@ import React from 'react'
 // import starEmpty from "./images/star-empty.png"
 
 const StateObject = () => {
-    const [contact] = React.useState({
+    const [contact, setContact] = React.useState({
         firstName: "John",
         lastName: "Doe",
         phone: "+1 (212) 555-1212",
@@ -16,10 +16,16 @@ const StateObject = () => {
 
     let starIcon = contact.isFavorite ? starFilled : starEmpty
 
-    function toggleFavorite() {
-        console.log("Toggle Favorite")
-    }
 
+    function toggleFavorite() {
+        // Challenge: re-write it :)
+        setContact(prev => {
+            return {
+                ...prev,
+                isFavorite: !prev.isFavorite
+            }
+        })
+    }
     return (
         <main>
             <article className="card">
