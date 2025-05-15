@@ -6,6 +6,8 @@ const Form = () => {
         const password = formData.get("password")
         const employmentStatus = formData.get("employmentStatus")
         const dietaryRestrictions = formData.getAll("dietaryRestrictions")
+        const favColor = formData.get('favColor')
+        console.log(favColor)
         console.log(email)
         console.log(password)
         console.log(employmentStatus)
@@ -56,6 +58,18 @@ const Form = () => {
                         Gluten-free
                     </label>
                 </fieldset>
+
+                <label htmlFor="favColor">What is your favorite color?</label>
+                <select id="favColor" name="favColor" defaultValue="" required>
+                    <option value="" disabled>-- Choose a color --</option>
+                    <option value="red">Red</option>
+                    <option value="orange">Orange</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="indigo">Indigo</option>
+                    <option value="violet">Violet</option>
+                </select>
 
 
                 <button>Submit</button>
