@@ -2,7 +2,6 @@ import './App.css'
 import Form from './components/Form'
 import Header from './components/Header'
 import Main from './components/Main'
-// import State from './components/State'
 // import StateObject from './components/StateObject'
 function App() {
 
@@ -11,7 +10,6 @@ function App() {
       <Header />
       <Main />
       <Form />
-      {/* <State /> */}
       {/* <StateObject /> */}
     </>
   )
