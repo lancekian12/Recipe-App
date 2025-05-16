@@ -1,5 +1,5 @@
 import './App.css'
-import Form from './components/Form'
+// import Form from './components/Form'
 import Header from './components/Header'
 import Main from './components/Main'
 // import StateObject from './components/StateObject'
@@ -9,7 +9,7 @@ function App() {
     <>
       <Header />
       <Main />
-      <Form />
+      {/* <Form /> */}
       {/* <StateObject /> */}
     </>
   )
