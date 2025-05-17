@@ -1,7 +1,6 @@
 import './App.css'
 // import Form from './components/Form'
 import Header from './components/Header'
-import John from './components/John'
 import Main from './components/Main'
 import Parent from './components/Parent'
 import Soundpad from './components/Soundpad'
@@ -10,8 +9,8 @@ function App() {
 
   return (
     <>
-      <Header />
-      <Main />
+      {/* <Header />
+      <Main /> */}
       <Soundpad darkMode={true} />
       {/* <John />
       <Parent /> */}

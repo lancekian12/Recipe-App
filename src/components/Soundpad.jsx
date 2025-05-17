@@ -1,15 +1,16 @@
 import React from 'react'
 import padsData from '../pad'
+import Pad from './Pad'
 
-const Soundpad = (props) => {
+const Soundpad = () => {
     const [pads] = React.useState(padsData)
 
-    const styles = {
-        backgroundColor: props.darkMode ? "#222222" : "#cccccc"
-    }
+    // const styles = {
+    //     backgroundColor: props.darkMode ? "#222222" : "#cccccc"
+    // }
 
     const buttonElements = pads.map(pad => (
-        <button style={styles} className='button-custom' key={pad.id}></button>
+        <Pad data={pad} />
     ))
 
     return (
