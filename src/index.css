@@ -118,4 +118,8 @@ ul.ingredients-list > li {
   border: 3px solid white;
   border-radius: 5px;
   cursor: pointer;
+  opacity: 0.1;
 }
+/* .on {
+  opacity: 1;
+} */
