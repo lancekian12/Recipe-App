@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/Header'
 import John from './components/John'
 import Main from './components/Main'
+import Parent from './components/Parent'
 // import StateObject from './components/StateObject'
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Main />
       <John />
+      <Parent />
       {/* <Form /> */}
       {/* <StateObject /> */}
     </>
