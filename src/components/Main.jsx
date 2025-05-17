@@ -19,15 +19,15 @@ const Main = () => {
         setIngredients(prevIngredients => [...prevIngredients, newIngredient])
     }
 
-    const [count, setCount] = React.useState(0)
+    // const [count, setCount] = React.useState(0)
 
-    function add() {
-        setCount(prevCount => prevCount + 1)
-    }
+    // function add() {
+    //     setCount(prevCount => prevCount + 1)
+    // }
 
-    function subtract() {
-        setCount(prevCount => prevCount - 1)
-    }
+    // function subtract() {
+    //     setCount(prevCount => prevCount - 1)
+    // }
 
 
     return (
@@ -86,7 +86,7 @@ const Main = () => {
                     </ol>
                 </article>
             </section>}
-            <div>
+            {/* <div>
                 <main className="container">
                     <div className="counter">
                         <button
@@ -104,7 +104,7 @@ const Main = () => {
                         >+</button>
                     </div>
                 </main>
-            </div>
+            </div> */}
         </main>
     )
 }

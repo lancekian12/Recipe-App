@@ -4,6 +4,7 @@ import Header from './components/Header'
 import John from './components/John'
 import Main from './components/Main'
 import Parent from './components/Parent'
+import Soundpad from './components/Soundpad'
 // import StateObject from './components/StateObject'
 function App() {
 
@@ -11,8 +12,9 @@ function App() {
     <>
       <Header />
       <Main />
-      <John />
-      <Parent />
+      <Soundpad />
+      {/* <John />
+      <Parent /> */}
       {/* <Form /> */}
       {/* <StateObject /> */}
     </>
