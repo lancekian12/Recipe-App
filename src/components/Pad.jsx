@@ -2,12 +2,18 @@ import React from 'react'
 
 const Pad = (props) => {
     console.log(props.data.on)
-    const styles = {
-        backgroundColor: props.data.color
+
+    const [on, setOn] = React.useState(props.on)
+
+    function handleClick() {
+        return setOn(prev => !prev)
     }
     return (
-        <button className={props.data.on ? "on" : "button-custom"}
-            style={styles} key={props.data.id}></button>
+        <button
+            onClick={handleClick}
+            style={{ backgroundColor: props.color }}
+            className={on ? "on" : undefined}
+        ></button>
     )
 }
 
