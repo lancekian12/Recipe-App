@@ -12,7 +12,7 @@ function App() {
     <>
       <Header />
       <Main />
-      <Soundpad />
+      <Soundpad darkMode={true} />
       {/* <John />
       <Parent /> */}
       {/* <Form /> */}
