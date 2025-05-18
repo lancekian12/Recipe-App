@@ -1,5 +1,5 @@
 import React from 'react'
-import Count from './Count'
+import Count from '../practice_component/Count'
 import ClaudeRecipe from './ClaudeRecipe'
 import IngredientList from './IngredientList'
 const Main = () => {

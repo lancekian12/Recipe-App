@@ -3,7 +3,7 @@ import './App.css'
 import Header from './components/Header'
 import Main from './components/Main'
 import Parent from './components/Parent'
-import Soundpad from './components/Soundpad'
+import Soundpad from './practice_component/Soundpad'
 // import StateObject from './components/StateObject'
 function App() {
 
