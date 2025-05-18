@@ -9,9 +9,9 @@ function App() {
 
   return (
     <>
-      {/* <Header />
-      <Main /> */}
-      <Soundpad darkMode={true} />
+      <Header />
+      <Main />
+      {/* <Soundpad darkMode={true} /> */}
       {/* <John />
       <Parent /> */}
       {/* <Form /> */}
