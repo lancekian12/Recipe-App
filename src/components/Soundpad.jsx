@@ -3,13 +3,15 @@ import padsData from '../pad'
 import Pad from './Pad'
 
 const Soundpad = () => {
-    const [pads] = React.useState(padsData)
+    const [pads, setPads] = React.useState(padsData)
 
     // const styles = {
     //     backgroundColor: props.darkMode ? "#222222" : "#cccccc"
     // }
-    function toggle() {
-        console.log("Clicked!")
+    function toggle(id) {
+        setPads(prevPads => prevPads.map(item => {
+            return item.id === id ? { ...item, on: !item.on } : item
+        }))
     }
 
     const buttonElements = pads.map(pad => (

@@ -120,6 +120,6 @@ ul.ingredients-list > li {
   cursor: pointer;
   opacity: 0.1;
 }
-/* .on {
+.on {
   opacity: 1;
-} */
+}
