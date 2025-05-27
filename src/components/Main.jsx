@@ -6,7 +6,7 @@ const Main = () => {
     const [ingredients, setIngredients] = React.useState(
         ["all the main spices", "pasta", "ground beef", "tomato paste"]
     )
-    const [recipeShown, setRecipeShown] = React.useState(false)
+    const [recipeShown, setRecipeShown] = React.useState("")
     const recipeSection = React.useRef(null)
 
     function toggleRecipeShown() {
@@ -29,6 +29,11 @@ const Main = () => {
     // function subtract() {
     //     setCount(prevCount => prevCount - 1)
     // }
+    React.useEffect(() => {
+        if (recipeShown !== "" && recipeSection.current !== null) {
+            recipeSection.current.scrollIntoView()
+        }
+    }, [recipeShown])
 
 
     return (
