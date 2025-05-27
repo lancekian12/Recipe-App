@@ -7,10 +7,12 @@ const Main = () => {
         ["all the main spices", "pasta", "ground beef", "tomato paste"]
     )
     const [recipeShown, setRecipeShown] = React.useState(false)
+    const recipeSection = React.useRef(null)
 
     function toggleRecipeShown() {
         setRecipeShown(prevShown => !prevShown)
     }
+
 
 
     function addIngredient(formData) {
@@ -41,7 +43,8 @@ const Main = () => {
                 <button>Add ingredient</button>
             </form>
 
-            {ingredients.length > 0 && <IngredientList ingredient={ingredients} toggle={toggleRecipeShown} />}
+            {ingredients.length > 0 && <IngredientList ref={recipeSection}
+                ingredient={ingredients} toggle={toggleRecipeShown} />}
 
             {recipeShown && <ClaudeRecipe />}
         </main>
